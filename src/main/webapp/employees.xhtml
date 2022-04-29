@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>EJB3</title>
+</h:head>
+<h:body>
+    <h:dataTable value="#{mainBean.employeeList}" var="employee">
+        <h:column>
+            <f:facet name="header">
+                <h:outputText value="Number" />
+            </f:facet>
+            <h:outputText value="#{employee.empNo}" />
+        </h:column>
+        <h:column>
+            <f:facet name="header">
+                <h:outputText value="Name" />
+            </f:facet>
+            <h:outputText value="#{employee.eName}" />
+        </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Job" />
+                </f:facet>
+                <h:outputText value="#{employee.job}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Manager" />
+                </f:facet>
+                <h:outputText value="#{employee.mgr}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="HireDate" />
+                </f:facet>
+                <h:outputText value="#{employee.hireDate}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Salary" />
+                </f:facet>
+                <h:outputText value="#{employee.sal}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Commision" />
+                </f:facet>
+                <h:outputText value="#{employee.comm}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Department" />
+                </f:facet>
+                <h:outputText value="#{employee.deptNo}" />
+            </h:column>
+    </h:dataTable>
+</h:body>
+
+</html>
